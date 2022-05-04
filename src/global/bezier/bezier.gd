@@ -1,7 +1,5 @@
 class_name Bezier
 
-const epsilon: = 1e-1
-
 var control_points: PoolVector2Array
 
 var cached_pabs: = PoolVector2Array()  # a 'pabs' is a pair (t, x) of a parametric curve
@@ -10,16 +8,13 @@ var last_closest_pabs_index: = 0  # last left closest point index
 
 
 func _init(
-	radius_control_points: PoolVector2Array,
+	control_points: PoolVector2Array,
 	cache_size: = self.cache_size):
 	
-	self.control_points = radius_control_points
+	self.control_points = control_points
 	self.cache_size = cache_size
 	cachePabs()
 	return self
-
-func equalsMinusZero(x: float) -> bool:
-	return -epsilon <= x and x < 0
 
 func linear_interpolate(A, B, t: float):
 	return (1-t)*A + t*B
@@ -87,7 +82,6 @@ func function(x: float) -> float:
 	var max_iterations = 100
 	
 	var i: = findLeftClosestCachedPabsIndex(x)
-	print(cached_pabs.size())
 	var tMin: = cached_pabs[i][0]
 	var tMax: = cached_pabs[i+1][0]
 	var tMid: = (tMin + tMax)/2.0

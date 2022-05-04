@@ -1,13 +1,17 @@
 extends Node2D
 
-var draw_rel_pos: = Vector2(0.5, 0.5)
+const epsilon: = 1e-1
+
+var rel_pos: = Vector2(0.5, 0.5)
 var lifetime: = 0.0
-var curr_radius: = 0.0
+var soundIntensity: = 0.0
+var radius: = 0.0
+var color: Color = Color.peru
 # the values taken by the curve are assumed to be between 0 and 1
-export(PoolVector2Array) var radius_control_points: = PoolVector2Array()
+export(PoolVector2Array) var intensity_control_points: = PoolVector2Array()
 export(float, 1, 100) var scaler: = 50.0
 
-var bezier: Bezier
+var intensBezier: Bezier
 
 var initialized: = false
 
@@ -19,38 +23,66 @@ func quadratic(t: float) -> float:
 	var r = max_radius*(1 - pow(2*t/duration - 1, 2)) 
 	return r
 
+func equalsMinusZero(x: float) -> bool:
+	return -epsilon <= x and x < 0
+
 func initialize(
-	draw_rel_pos: = self.draw_rel_pos,
-	radius_control_points: = self.radius_control_points,
+	rel_pos: = self.rel_pos,
+	intensity_control_points: = self.intensity_control_points,
 	scaler: float = self.scaler):
 	
-	self.draw_rel_pos = draw_rel_pos
+	self.rel_pos = rel_pos
 	self.scaler = scaler
-	self.bezier = Bezier.new(radius_control_points)
+	self.intensBezier = Bezier.new(intensity_control_points)
 	initialized = true
 	return self
 
-func radius(time: float) -> float:
-	return scaler*bezier.function(time)
+func updateLifetime(delta: float):
+	lifetime += delta
 
+func updateSoundIntensity():
+	var i: = intensBezier.function(lifetime)
+	if equalsMinusZero(i): i = 0
+	soundIntensity = i
+
+func updateSoundPitch():
+	pass
+
+func updateRadius():
+	radius = scaler*soundIntensity
+
+func updateColor():
+	color.a = soundIntensity
+
+func updateRelativePosition():
+	pass
+
+func getAbsolutePosition() -> Vector2:
+	return System.toAbsolute(rel_pos)
 
 func _ready():
 	if not initialized:
 		initialize()
 	set_physics_process(false)
-	yield(get_tree().create_timer(2.0), "timeout")
+	yield(get_tree().create_timer(1.5), "timeout")
 	set_physics_process(true)
 
 func _draw():
-	var abs_pos: Vector2 = System.toAbsolute(draw_rel_pos)
-	draw_circle(abs_pos, curr_radius, Color.white)
+	var abs_pos: = getAbsolutePosition()
+	draw_circle(abs_pos, radius, color)
 
 func _physics_process(delta):
-	lifetime += delta
-	curr_radius = radius(lifetime)
+	updateLifetime(delta)
 	
-	if curr_radius < 0:
+	updateSoundIntensity()
+	updateSoundPitch()
+	
+	updateRadius()
+	updateColor()
+	updateRelativePosition()
+	
+	if radius < 0:
 		call_deferred("queue_free")
 		set_physics_process(false)
-	
-	update()
+	else:
+		update()
