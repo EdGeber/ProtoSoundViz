@@ -4,3 +4,4 @@
 
 [node name="photism" type="Node2D"]
 script = ExtResource( 1 )
+radius_control_points = PoolVector2Array( 0, 0, 0, 1.333, 1, 1.333, 5, 0 )
