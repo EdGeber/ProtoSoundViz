@@ -73,6 +73,7 @@ func findLeftClosestCachedPabsIndex(x: float) -> int:
 		closest_dist = curr_dist
 		closest_pabs = curr_pabs
 	
+	last_closest_pabs_index = closest_pabs_index
 	if x < closest_pabs[1]:
 		return closest_pabs_index-1
 	return closest_pabs_index
