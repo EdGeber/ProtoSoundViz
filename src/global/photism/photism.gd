@@ -82,7 +82,7 @@ func updateRadius():
 	radius = radius_scaler*sound_intensity
 
 func updateColor():
-	color = base_color*sound_pitch*0.0085
+	color = base_color*sound_pitch*0.01
 	color.a = sound_intensity
 
 func updateRelativePosition():
