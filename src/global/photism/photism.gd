@@ -4,27 +4,18 @@ const epsilon: = 1e-1
 
 var i = 1
 
-var testing: = false
-var colorPallet:= {
-	"0": [Color(255,0,0), 0.5], #Vermelho
-	"1": [Color(0, 255, 0), 0.1], #Verde
-	"2": [Color(0, 0, 255), 0.2], #Azul 
-	"3": [Color(255, 255, 0), 0.3], #Amarelo 
-	"4": [Color(200, 162, 200), 0.4] #Lilas
-}
 var lifetime: = 0.0
-var soundIntensity: float = 0
-var soundPitch: float
-var soundTimbre: String = "0"
+var sound_intensity: float
+var sound_pitch: float
 var radius: float
-var baseColor: Color
+var base_color: Color
 var color: Color 
 var rel_pos: Vector2
-var timestamp: int = 0
+var timestamp: int
 # the values taken by the curve are assumed to be between 0 and 1
-export(PoolVector2Array) var intensity_control_points: = PoolVector2Array()
-export(PoolVector2Array) var pitch_control_points: = PoolVector2Array()
-export(float, 1, 100) var radiusScaler: = 50.0
+var intensity_control_points: PoolVector2Array
+var pitch_control_points: PoolVector2Array
+var radius_scaler: = 50.0
 
 var maxLifetime: float
 
@@ -45,21 +36,22 @@ func equalsMinusZero(x: float) -> bool:
 	return -epsilon <= x and x < 0
 
 # Olha no dicionário de cor, e seta a cor do circulo
-func setYColor(timbre: String):
-	baseColor = colorPallet[timbre][0]
-	rel_pos.y  = colorPallet[timbre][1]
+func setYColor(base_color: Color, rel_height: float):
+	self.base_color = base_color
+	rel_pos.y  = rel_height
 
 func initialize(
-	intensity_control_points: = self.intensity_control_points,
-	pitch_control_points: = self.pitch_control_points,
-	soundTimbre: String = self.soundTimbre,
-	radiusScaler: float = self.radiusScaler,
-	timestamp: int = self.timestamp):
+	intensity_control_points: PoolVector2Array,
+	pitch_control_points: PoolVector2Array,
+	base_color: Color,
+	rel_height: float,
+	timestamp: int,
+	radius_scaler: float = self.radius_scaler):
 	
 	self.intensBezier = Bezier.new(intensity_control_points)
 	self.pitchBezier = Bezier.new(pitch_control_points)
-	self.radiusScaler = radiusScaler
-	self.setYColor(soundTimbre)
+	self.radius_scaler = radius_scaler
+	self.setYColor(base_color, rel_height)
 	self.timestamp = timestamp
 
 	var num_intens_points: int = intensity_control_points.size() - 1
@@ -76,33 +68,33 @@ func updateLifetime(delta: float):
 	lifetime += delta
 	lifetime = min(maxLifetime, lifetime)
 
-func updateSoundIntensity():
+func updatesound_intensity():
 	var i: = intensBezier.function(lifetime)
 	if equalsMinusZero(i): i = 0
-	soundIntensity = i
+	sound_intensity = i
 
-func updateSoundPitch():
+func updatesound_pitch():
 	var i: = pitchBezier.function(lifetime)
 	if equalsMinusZero(i): i = 0
-	soundPitch = i
+	sound_pitch = i
 
 func updateRadius():
-	radius = radiusScaler*soundIntensity
+	radius = radius_scaler*sound_intensity
 
 func updateColor():
-	color = baseColor*soundPitch*0.01
-	color.a = soundIntensity
+	color = base_color*sound_pitch*0.0085
+	color.a = sound_intensity
 
 func updateRelativePosition():
-	rel_pos.x = soundPitch
+	rel_pos.x = sound_pitch
 
 func getAbsolutePosition() -> Vector2:
 	return System.toAbsolute(rel_pos)
 
 func _ready():
 	if not initialized:
-		testing = true
-		initialize()
+		push_error("Uninitilized photism")
+		assert(false)
 	set_physics_process(false)
 	yield(get_tree().create_timer(timestamp), "timeout")
 	set_physics_process(true)
@@ -112,13 +104,13 @@ func _draw():
 	draw_circle(abs_pos, radius, color)
 
 func _physics_process(delta):
-	if soundIntensity < 0:
+	if sound_intensity < 0:
 		call_deferred("queue_free")
 		set_physics_process(false)
 		return
 
-	updateSoundIntensity()
-	updateSoundPitch()
+	updatesound_intensity()
+	updatesound_pitch()
 	updateRadius()
 	updateColor()
 	updateRelativePosition()
