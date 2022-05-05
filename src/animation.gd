@@ -1,40 +1,27 @@
 extends Node2D
 
-export(String) var animation_folder_path: String = "res://src/animations/test/"
+export(String) var animation_folder_path: String = "res://src/animations/steps/"
 export(int, 1, 100) var scale_factor: float = 50.0
+export(float, 0, 10) var video_delay: float = 0
 
 var photism_resource: = preload("res://src/global/photism/photism.tscn")
+var references: Dictionary
+var timbres: Dictionary
 
-func arrayToVector2(a: Array) -> Vector2:
-	return Vector2(a[0], a[1])
+func dictToPhotism(sound_dict: Dictionary):
+	var sound_name: String = sound_dict["sound"]
 
-func arrayToPoolVector2(a: Array) -> PoolVector2Array:
-	var p: = PoolVector2Array()
-	for arr in a:
-		p.append(arrayToVector2(arr))
-	return p
-
-func arrayToColor(a: Array) -> Color:
-	return Color(a[0], a[1], a[2])
+	var intens_points: PoolVector2Array = System.arrayToPoolVector2(references[sound_name]["intensity_points"])
+	var pitch_points: PoolVector2Array = System.arrayToPoolVector2(references[sound_name]["pitch_points"])
+	var timbre_name: String = references[sound_name]["timbre"]
 	
-func jsonPathToDict(path) -> Dictionary:
-	# https://godotengine.org/qa/117888/how-do-i-read-a-json-file
-	var file: = File.new()
-	file.open(path, File.READ)
-	var json_text: = file.get_as_text()
-	var dict: Dictionary = parse_json(json_text) 
-	file.close()
-	return dict
+	var duration: float = sound_dict["duration"]
+	var strength: float = sound_dict["strength"]
+	var timestamp: float = sound_dict["timestamp"]
 
-func dictToPhotism(sound_dict):
-	var intens_points: PoolVector2Array = arrayToPoolVector2(sound_dict["intensity_points"])
-	var pitch_points: PoolVector2Array = arrayToPoolVector2(sound_dict["pitch_points"])
-	var timestamp: int = sound_dict["timestamp"]
-	var timbre: String = sound_dict["timbre"]
-
-	var timbre_dict: = jsonPathToDict(animation_folder_path + "timbres.json")
-	var base_color: Color = arrayToColor(timbre_dict[timbre]["color"])
-	var height: float = 1 - timbre_dict[timbre]["height"]
+	
+	var base_color: Color = System.arrayToColor(timbres[timbre_name]["color"])
+	var height: float = 1 - timbres[timbre_name]["height"]
 
 	add_child(
 		photism_resource.instance().initialize(
@@ -43,12 +30,25 @@ func dictToPhotism(sound_dict):
 			base_color,
 			height,
 			timestamp,
-			scale_factor
+			scale_factor,
+			duration,
+			strength
 		)
 	)
 
 func _ready():
-	var allAni = jsonPathToDict(animation_folder_path + "sounds.json")
-	for x in allAni["sounds"]:
-		dictToPhotism(x)
+	var video_resource: = load(animation_folder_path + "video.ogv")
+	var video_player: = get_node("VideoPlayer")
+	video_player.stream = video_resource
+
+	references = System.jsonPathToDict(animation_folder_path + "references.json")
+	timbres = System.jsonPathToDict(animation_folder_path + "timbres.json")
+	
+	var sounds: Dictionary = System.jsonPathToDict(animation_folder_path + "sounds.json")
+	for sound_dict in sounds["sounds"]:
+		dictToPhotism(sound_dict)
+
+	yield(get_tree().create_timer(video_delay), "timeout")
+	video_player.play()
+	
 	

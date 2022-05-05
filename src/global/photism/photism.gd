@@ -2,7 +2,7 @@ extends Node2D
 
 const epsilon: = 1e-1
 
-var i = 1
+var index = 1
 
 var lifetime: = 0.0
 var sound_intensity: float
@@ -11,13 +11,13 @@ var radius: float
 var base_color: Color
 var color: Color 
 var rel_pos: Vector2
-var timestamp: int
+var timestamp: float
+var duration: float
+var strength: float  # 0 to 1
 # the values taken by the curve are assumed to be between 0 and 1
 var intensity_control_points: PoolVector2Array
 var pitch_control_points: PoolVector2Array
 var radius_scaler: = 50.0
-
-var maxLifetime: float
 
 var intensBezier: Bezier
 var pitchBezier: Bezier
@@ -45,36 +45,32 @@ func initialize(
 	pitch_control_points: PoolVector2Array,
 	base_color: Color,
 	rel_height: float,
-	timestamp: int,
-	radius_scaler: float = self.radius_scaler):
+	timestamp: float,
+	radius_scaler: float = self.radius_scaler, 
+	duration: float = self.duration,
+	strength: float = self.strength):
 	
 	self.intensBezier = Bezier.new(intensity_control_points)
 	self.pitchBezier = Bezier.new(pitch_control_points)
 	self.radius_scaler = radius_scaler
 	self.setYColor(base_color, rel_height)
 	self.timestamp = timestamp
+	self.duration = duration
+	self.strength = strength 
 
-	var num_intens_points: int = intensity_control_points.size() - 1
-	var max_intens_x: float = intensity_control_points[num_intens_points].x
-	
-	var num_pitch_points: int = pitch_control_points.size() - 1
-	var max_pitch_x: float =  intensity_control_points[num_pitch_points].x
-	self.maxLifetime = min(max_intens_x, max_pitch_x)
-	
 	initialized = true
 	return self
 
 func updateLifetime(delta: float):
 	lifetime += delta
-	lifetime = min(maxLifetime, lifetime)
+	lifetime = min(duration, lifetime)
 
 func updatesound_intensity():
-	var i: = intensBezier.function(lifetime)
-	if equalsMinusZero(i): i = 0
-	sound_intensity = i
+	var i: = intensBezier.function(lifetime/duration, index)*strength
+	sound_intensity = max(i, 0.0)
 
 func updatesound_pitch():
-	var i: = pitchBezier.function(lifetime)
+	var i: = pitchBezier.function(lifetime/duration, index)
 	if equalsMinusZero(i): i = 0
 	sound_pitch = i
 
@@ -104,7 +100,9 @@ func _draw():
 	draw_circle(abs_pos, radius, color)
 
 func _physics_process(delta):
-	if sound_intensity < 0:
+	index += 1
+	
+	if lifetime >= duration:
 		call_deferred("queue_free")
 		set_physics_process(false)
 		return

@@ -78,7 +78,7 @@ func findLeftClosestCachedPabsIndex(x: float) -> int:
 		return closest_pabs_index-1
 	return closest_pabs_index
 
-func function(x: float) -> float:
+func function(x: float, index) -> float:
 	var tolerance: = 1e-4
 	var max_iterations = 100
 	
@@ -87,9 +87,15 @@ func function(x: float) -> float:
 	var tMax: = cached_pabs[i+1][0]
 	var tMid: = (tMin + tMax)/2.0
 	var found: Vector2 = curve(tMid)
+	var iterations: = 0
 	while not(found.x - tolerance <= x and x <= found.x + tolerance):
+		if iterations > 20:
+			break
+		
 		if found.x < x: tMin = tMid
 		else: tMax = tMid
 		tMid = (tMin + tMax)/2.0
 		found = curve(tMid)
+		
+		iterations += 1
 	return found.y
