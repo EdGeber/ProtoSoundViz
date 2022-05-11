@@ -1,0 +1,46 @@
+{
+	"steve_step": {
+		"color": [255,0,0],
+		"height": 0.05
+	},
+	
+	"pig_step": {
+		"color": [0,255,0],
+		"height": 0.10
+	},
+
+	"pig_sound": {
+		"color": [100,255,40],
+		"height": 0.30
+	},
+	
+	"cow_step": {
+		"color": [0,0,255],
+		"height": 0.15
+	},
+
+	"sheep_step": {
+		"color": [255,255,0],
+		"height": 0.2
+	},
+	"punch_sheep": {
+		"color": [0,255,255],
+		"height": 0.25
+	},
+	"cow_sound": {
+		"color": [120],
+		"height": 0.35
+	},
+	"sheep_sound": {
+		"color": [120,60,25],
+		"height": 0.40
+	},
+	"grass_destroy": {
+		"color": [233,155,0],
+		"height": 0.45
+	},
+	"WOOD_destroy": {
+		"color": [177,60,125],
+		"height": 0.50
+	}
+}
