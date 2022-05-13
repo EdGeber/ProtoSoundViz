@@ -93,6 +93,7 @@ func _ready():
 
 func _draw():
 	var abs_pos: = getAbsolutePosition()
+	draw_circle(abs_pos, radius+3, Color.black)
 	draw_circle(abs_pos, radius, color)
 
 func _physics_process(delta):

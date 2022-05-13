@@ -6,8 +6,8 @@
 [node name="animation" type="Node2D"]
 script = ExtResource( 1 )
 animation_folder_path = "res://src/animations/minecraft/"
-scale_factor = 200
-video_delay = -0.352
+scale_factor = 150
+video_delay = -0.131
 
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
 margin_right = 1024.0

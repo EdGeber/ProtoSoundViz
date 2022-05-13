@@ -5,61 +5,40 @@
 	},
 	"steve_step": {
 		"color": [255,0,0],
-		"height": 0.05
+		"height": 0.1
 	},
-	
 	"pig_step": {
-		"color": [0,255,0],
-		"height": 0.10
+		"color": [255,226,254],
+		"height": 0.1
+	},
+	"cow_step": {
+		"color": [198,198,198],
+		"height": 0.1
 	},
 
 	"pig_sound": {
-		"color": [100,255,40],
-		"height": 0.30
+		"color": [254,142,255],
+		"height": 0.9
 	},
-	
-	"cow_step": {
-		"color": [0,0,255],
-		"height": 0.15
-	},
-
-	"steve_hits_cow": {
-		"color": [255,255,0],
-		"height": 0.2
-	},
-
 	"cow_moo": {
-		"color": [0,255,255],
-		"height": 0.25
+		"color": [118,92,62],
+		"height": 0.9
 	},
-
 	"cow_sigh": {
 		"color": [120,60,25],
-		"height": 0.40
+		"height": 0.9
 	},
-
-	"sheep_step": {
-		"color": [255,255,0],
-		"height": 0.2
+	"white_noise": {
+		"color": [255,255,255],
+		"height": 0.9
 	},
-	"punch_sheep": {
-		"color": [0,255,255],
-		"height": 0.25
+	
+	"steve_hits_cow": {
+		"color": [255,137,0],
+		"height": 0.75
 	},
-	"cow_sound": {
-		"color": [120],
-		"height": 0.35
-	},
-	"sheep_sound": {
-		"color": [120,60,25],
-		"height": 0.40
-	},
-	"grass_destroy": {
+	"wood_hit_bump": {
 		"color": [233,155,0],
-		"height": 0.45
-	},
-	"WOOD_destroy": {
-		"color": [177,60,125],
-		"height": 0.50
+		"height": 0.75
 	}
 }

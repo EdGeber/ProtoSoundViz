@@ -4,7 +4,6 @@ export(String) var animation_folder_path: String = "res://src/animations/steps/"
 export(int, 1, 500) var scale_factor: float = 50.0
 export(float, -5, 5) var video_delay: float = 0
 """export(float, 0.1, 2)""" var speed: float = 1
-var _pig_sound_photism
 
 var photism_resource: = preload("res://src/global/photism/photism.tscn")
 var references: Dictionary
@@ -35,7 +34,7 @@ func dictToPhotism(sound_dict: Dictionary):
 			height,
 			timestamp,
 			scale_factor,
-			duration,
+			duration*1.25,
 			strength
 		)
 	)
@@ -55,13 +54,8 @@ func _ready():
 		video_player.play()
 		yield(get_tree().create_timer(-1*video_delay), "timeout")
 	
-	var i: int = 1
 	for sound_dict in sounds["sounds"]:
 		dictToPhotism(sound_dict)
-		if(sound_dict["sound"] == "pig_sound_1/3"):
-			self._pig_sound_photism = self.get_child(i)
-			#breakpoint
-		i += 1
 
 	if video_delay > 0:  # delay the video
 		yield(get_tree().create_timer(video_delay), "timeout")
