@@ -24,7 +24,7 @@ func arrayToPoolVector2(a: Array) -> PoolVector2Array:
 	return p
 
 func arrayToColor(a: Array) -> Color:
-	return Color(a[0], a[1], a[2])
+	return Color8(a[0], a[1], a[2])
 
 func jsonPathToDict(path) -> Dictionary:
 	# https://godotengine.org/qa/117888/how-do-i-read-a-json-file

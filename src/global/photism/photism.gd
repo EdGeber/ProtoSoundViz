@@ -35,11 +35,6 @@ func quadratic(t: float) -> float:
 func equalsMinusZero(x: float) -> bool:
 	return -epsilon <= x and x < 0
 
-# Olha no dicionário de cor, e seta a cor do circulo
-func setYColor(base_color: Color, rel_height: float):
-	self.base_color = base_color
-	rel_pos.y  = rel_height
-
 func initialize(
 	intensity_control_points: PoolVector2Array,
 	pitch_control_points: PoolVector2Array,
@@ -52,8 +47,9 @@ func initialize(
 	
 	self.intensBezier = Bezier.new(intensity_control_points)
 	self.pitchBezier = Bezier.new(pitch_control_points)
+	self.base_color = base_color
+	self.rel_pos.y = rel_height
 	self.radius_scaler = radius_scaler
-	self.setYColor(base_color, rel_height)
 	self.timestamp = timestamp
 	self.duration = duration
 	self.strength = strength 
@@ -78,7 +74,7 @@ func updateRadius():
 	radius = radius_scaler*sound_intensity
 
 func updateColor():
-	color = base_color*sound_pitch*0.1
+	color = base_color.darkened((1-sound_pitch)*0.75)
 	color.a = 1 #sound_intensity
 
 func updateRelativePosition():

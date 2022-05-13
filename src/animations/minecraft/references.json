@@ -10,6 +10,7 @@
 		],
 		"timbre": "test_timbre"
 	},
+	
 	"steve_step": {
 		"intensity_points": [
 			[0, 0.7],
