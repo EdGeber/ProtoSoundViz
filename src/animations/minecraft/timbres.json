@@ -1,4 +1,8 @@
 {
+	"test_timbre": {
+		"color": [255,0,0],
+		"height": 0.5
+	},
 	"steve_step": {
 		"color": [255,0,0],
 		"height": 0.05
@@ -17,6 +21,21 @@
 	"cow_step": {
 		"color": [0,0,255],
 		"height": 0.15
+	},
+
+	"steve_hits_cow": {
+		"color": [255,255,0],
+		"height": 0.2
+	},
+
+	"cow_moo": {
+		"color": [0,255,255],
+		"height": 0.25
+	},
+
+	"cow_sigh": {
+		"color": [120,60,25],
+		"height": 0.40
 	},
 
 	"sheep_step": {

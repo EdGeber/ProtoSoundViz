@@ -1,8 +1,9 @@
 extends Node2D
 
 export(String) var animation_folder_path: String = "res://src/animations/steps/"
-export(int, 1, 100) var scale_factor: float = 50.0
-export(float, 0, 10) var video_delay: float = 0
+export(int, 1, 500) var scale_factor: float = 50.0
+export(float, -5, 5) var video_delay: float = 0
+"""export(float, 0.1, 2)""" var speed: float = 1
 
 var photism_resource: = preload("res://src/global/photism/photism.tscn")
 var references: Dictionary
@@ -11,8 +12,10 @@ var timbres: Dictionary
 func dictToPhotism(sound_dict: Dictionary):
 	var sound_name: String = sound_dict["sound"]
 
-	var intens_points: PoolVector2Array = System.arrayToPoolVector2(references[sound_name]["intensity_points"])
-	var pitch_points: PoolVector2Array = System.arrayToPoolVector2(references[sound_name]["pitch_points"])
+	var intens_points: PoolVector2Array = System.arrayToPoolVector2(
+		references[sound_name]["intensity_points"])
+	var pitch_points: PoolVector2Array = System.arrayToPoolVector2(
+		references[sound_name]["pitch_points"])
 	var timbre_name: String = references[sound_name]["timbre"]
 	
 	var duration: float = sound_dict["duration"]
@@ -37,18 +40,25 @@ func dictToPhotism(sound_dict: Dictionary):
 	)
 
 func _ready():
-	var video_resource: = load(animation_folder_path + "video.ogv")
+	var video_resource: = load(animation_folder_path + "video.webm")
 	var video_player: = get_node("VideoPlayer")
 	video_player.stream = video_resource
 
 	references = System.jsonPathToDict(animation_folder_path + "references.json")
 	timbres = System.jsonPathToDict(animation_folder_path + "timbres.json")
+
+	var sounds: Dictionary = System.jsonPathToDict(
+		animation_folder_path + "sounds.json")
+
+	if video_delay < 0:  # bring forward the video
+		video_player.play()
+		yield(get_tree().create_timer(-1*video_delay), "timeout")
 	
-	var sounds: Dictionary = System.jsonPathToDict(animation_folder_path + "sounds.json")
 	for sound_dict in sounds["sounds"]:
 		dictToPhotism(sound_dict)
 
-	yield(get_tree().create_timer(video_delay), "timeout")
-	video_player.play()
-	
-	
+	if video_delay > 0:  # delay the video
+		yield(get_tree().create_timer(video_delay), "timeout")
+		video_player.play()
+
+	Engine.time_scale = speed

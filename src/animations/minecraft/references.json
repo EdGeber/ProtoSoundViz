@@ -1,9 +1,20 @@
 {
+	"test": {
+		"intensity_points": [
+			[0, 1],
+			[0, 1]
+		],
+		"pitch_points": [
+			[0,   0.5],
+			[1,   0.5]
+		],
+		"timbre": "test_timbre"
+	},
 	"steve_step": {
 		"intensity_points": [
-			[0, 0],
-			[0, 0.4],
-			[1, 0.4],
+			[0, 0.7],
+			[0.2, 0.7],
+			[0.7, 1.7],
 			[1, 0]
 		],
 		"pitch_points": [
@@ -31,9 +42,9 @@
 
 	"pig_step": {
 		"intensity_points": [
-			[0, 0.3],
-			[0, 1.0],
-			[1, 1.0],
+			[0, 0.8],
+			[0.5, 1.0],
+			[0.9, 1.3],
 			[1, 0]
 		],
 		"pitch_points": [
@@ -45,9 +56,9 @@
 
 	"pig_sound_1/3": {
 		"intensity_points": [
-			[0, 0.5],
-			[0, 1.0],
-			[1, 1.2],
+			[0, 0.9],
+			[0.7, 1.1],
+			[1, 1.1],
 			[1, 0]
 		],
 		"pitch_points": [
@@ -59,9 +70,9 @@
 
 	"pig_sound_2/3": {
 		"intensity_points": [
-			[0, 0.5],
-			[0, 1.0],
-			[1, 1.2],
+			[0, 0.9],
+			[0.7, 1.1],
+			[1, 1.1],
 			[1, 0]
 		],
 		"pitch_points": [
@@ -73,9 +84,9 @@
 
 	"pig_sound_3/3": {
 		"intensity_points": [
-			[0, 0.5],
-			[0, 1.0],
-			[1, 1.2],
+			[0, 0.9],
+			[0.7, 1.1],
+			[1, 1.1],
 			[1, 0]
 		],
 		"pitch_points": [
@@ -83,5 +94,77 @@
 			[1,   0.025]
 		],
 		"timbre": "pig_sound"
+	},
+
+	"cow_step": {
+		"intensity_points": [
+			[0, 0.7],
+			[0.2, 0.7],
+			[0.7, 1.7],
+			[1, 0]
+		],
+		"pitch_points": [
+			[0,   0.6],
+			[1,   0.6]
+		],
+		"timbre": "cow_step"
+	},
+
+	"steve_hits_cow": {
+		"intensity_points": [
+			[0, 0.8],
+			[0.9, 1.1],
+			[1, 1.1],
+			[1, 0]
+		],
+		"pitch_points": [
+			[0,   0.85],
+			[1,   0.85]
+		],
+		"timbre": "steve_hits_cow"
+	},
+
+	"cow_pain_moo": {
+		"intensity_points": [
+			[0, 0.9],
+			[0.9, 0.9],
+			[1, 1],
+			[1, 0]
+		],
+		"pitch_points": [
+			[0, 0.25],
+			[0.3, 0.4],
+			[0.7, 0.4],
+			[1, 0.25]
+		],
+		"timbre": "cow_moo"
+	},
+
+	"cow_moo": {
+		"intensity_points": [
+			[0, 0.9],
+			[0, 1.33333],
+			[1, 1.33333],
+			[1, 0.9]
+		],
+		"pitch_points": [
+			[0, 0.55],
+			[0.3, 0.45]
+		],
+		"timbre": "cow_moo"
+	},
+
+	"cow_sigh": {
+		"intensity_points": [
+			[0, 0.3],
+			[0, 1.3],
+			[0.1, 1.2],
+			[1, 1]
+		],
+		"pitch_points": [
+			[0, 0.25],
+			[0.3, 0.25]
+		],
+		"timbre": "cow_sigh"
 	}
 }

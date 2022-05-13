@@ -1,13 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/animation.gd" type="Script" id=1]
+[ext_resource path="res://src/VideoPlayer.gd" type="Script" id=2]
 
 [node name="animation" type="Node2D"]
 script = ExtResource( 1 )
 animation_folder_path = "res://src/animations/minecraft/"
-scale_factor = 35
-video_delay = 0.955
+scale_factor = 200
+video_delay = -0.352
 
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

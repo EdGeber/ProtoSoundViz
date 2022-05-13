@@ -3,43 +3,458 @@
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.85,  
+			"strength": 0.1,
 			"timestamp": 6.95
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
-			"strength": 0.7,  
+			"strength": 0.1,  
 			"timestamp": 7.3
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.85,  
+			"strength": 0.15,  
 			"timestamp": 7.7
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
-			"strength": 0.85,  
+			"strength": 0.2,  
 			"timestamp": 8.1
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.23,
-			"strength": 1,  
+			"strength": 0.2,  
 			"timestamp": 8.52
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.1,  
+			"strength": 0.2,  
 			"timestamp": 8.9
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.3,
+			"strength": 0.23, 
+			"timestamp": 8.9
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.1,         
+			"timestamp": 9.7
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.15,         
+			"timestamp": 10.05
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.3,
+			"strength": 0.3,         
+			"timestamp": 10.05
+		},
+		
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.2,         
+			"timestamp": 10.52
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.3,
+			"strength": 0.4,         
+			"timestamp": 10.67
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.2,         
+			"timestamp": 10.87
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.3,
+			"strength": 0.4,         
+			"timestamp": 11.28
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.3,         
+			"timestamp": 11.27
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.3,
+			"strength": 0.4,         
+			"timestamp": 11.28
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.3,         
+			"timestamp": 11.32
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 12.67
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 14.66
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 14.66
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 14.66
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.2,         
+			"timestamp": 15.9
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.27,
+			"strength": 0.1,         
+			"timestamp": 16.32
+		},  
+
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 16.8
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.26,
+			"strength": 0.1,         
+			"timestamp": 17.125
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 17.53
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 18.25
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 18.37
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.3,         
+			"timestamp": 18.76
+		},
+		
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 19.18
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 19.18
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 19.55
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 19.93
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.25,
+			"strength": 0.3,         
+			"timestamp": 20.07
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.35,
+			"strength": 0.2,         
+			"timestamp": 20.35
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.25,
+			"strength": 0.3,         
+			"timestamp": 20.46
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.35,
+			"strength": 0.2,         
+			"timestamp": 20.73
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.35,
+			"strength": 0.2,         
+			"timestamp": 21.07
+		},
+
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 21.48
+		},
+
+
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.15 ,         
+			"timestamp": 21.85
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.20 ,         
+			"timestamp": 22.25
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 22.47
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 22.47
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.35,
+			"strength": 0.6,         
+			"timestamp": 22.47
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.1 ,         
+			"timestamp": 22.7
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.3,         
+			"timestamp": 23.04
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.20,
+			"strength": 0.4,         
+			"timestamp": 24.08
+		},
+
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.3,         
+			"timestamp": 24.6
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.15,
+			"strength": 0.4,         
+			"timestamp": 24.76
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.15,
+			"strength": 0.4,         
+			"timestamp": 24.76
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.35,
+			"strength": 0.5,         
+			"timestamp": 25.57
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.35,
+			"strength": 0.5,         
+			"timestamp": 25.57
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.35,
+			"strength": 0.5,         
+			"timestamp": 25.57
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.05,
+			"strength": 0.3,         
+			"timestamp": 25.94
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.03,
+			"strength": 0.15,         
+			"timestamp": 26.54
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.2,         
+			"timestamp": 26.9
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.05,
+			"strength": 0.17,         
+			"timestamp": 27.14
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.05,
+			"strength": 0.17,         
+			"timestamp": 27.78
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.02,
+			"strength": 0.17,         
+			"timestamp": 28.38 
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.1 ,
+			"strength": 0.1,         
+			"timestamp": 28.44
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.35,
+			"strength": 0.3,         
+			"timestamp": 28.85
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.35,
+			"strength": 0.3,         
+			"timestamp": 28.85
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.35,
+			"strength": 0.3,         
+			"timestamp": 28.85
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.06,         
+			"timestamp": 29.27
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.15,         
+			"timestamp": 29.8
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.15,         
+			"timestamp": 30.18
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.25,
+			"strength": 0.35,         
+			"timestamp": 28.85
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.25,
+			"strength": 0.35,         
+			"timestamp": 28.85
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.25,
+			"strength": 0.35,         
+			"timestamp": 29.95
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.15,         
+			"timestamp": 30.18
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 30.55
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 30.55
+		},
+		{
+			"sound": "cow_step",
+			"duration": 0.3,
+			"strength": 0.3,         
+			"timestamp": 30.18
+		},
+		{
+			"sound": "cow_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 30.85
 		}
 	]
 }
