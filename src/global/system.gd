@@ -34,3 +34,12 @@ func jsonPathToDict(path) -> Dictionary:
 	var dict: Dictionary = parse_json(json_text) 
 	file.close()
 	return dict
+
+func intervalTransform(subject: float, fromInterval: Vector2, toInterval: Vector2) -> float:
+	var fromStart: float = fromInterval.x
+	var fromScale: float = fromInterval.y - fromInterval.x
+
+	var toStart: float = toInterval.x
+	var toScale: float = toInterval.y - toInterval.x
+
+	return ((subject - fromStart)/fromScale)*toScale + toStart

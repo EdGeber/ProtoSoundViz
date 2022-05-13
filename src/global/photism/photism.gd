@@ -78,7 +78,7 @@ func updateColor():
 	color.a = 1 #sound_intensity
 
 func updateRelativePosition():
-	rel_pos.x = sound_pitch
+	rel_pos.x = System.intervalTransform(sound_pitch, Vector2(0.0, 1.0), Vector2(0.1, 0.9))
 
 func getAbsolutePosition() -> Vector2:
 	return System.toAbsolute(rel_pos)
