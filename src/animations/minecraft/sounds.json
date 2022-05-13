@@ -1,210 +1,197 @@
 {
 	"sounds": [
 		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.2,
-			"strength": 0.1,
+			"strength": 0.2,
 			"timestamp": 6.95
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
-			"strength": 0.1,  
-			"timestamp": 7.3
+			"strength": 0.18,  
+			"timestamp": 7.33
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.15,  
-			"timestamp": 7.7
+			"strength": 0.2,  
+			"timestamp": 7.713
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.2,  
-			"timestamp": 8.1
+			"timestamp": 8.115
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.23,
 			"strength": 0.2,  
-			"timestamp": 8.52
+			"timestamp": 8.527
 		},
 
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.2,  
-			"timestamp": 8.9
-		},
-		{
-			"sound": "pig_step",
-			"duration": 0.3,
-			"strength": 0.23, 
-			"timestamp": 8.9
+			"strength": 0.25,  
+			"timestamp": 8.925
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.1,         
-			"timestamp": 9.7
+			"strength": 0.2,         
+			"timestamp": 9.254
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
-			"strength": 0.15,         
-			"timestamp": 10.05
+			"strength": 0.2,         
+			"timestamp": 9.681
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.2,
+			"strength": 0.18,         
+			"timestamp": 10.039
 		},
 		{
 			"sound": "pig_step",
 			"duration": 0.3,
 			"strength": 0.3,         
-			"timestamp": 10.05
+			"timestamp": 10.039
 		},
 		
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
 			"strength": 0.2,         
-			"timestamp": 10.52
+			"timestamp": 10.526
 		},
 		{
 			"sound": "pig_step",
 			"duration": 0.3,
 			"strength": 0.4,         
-			"timestamp": 10.67
+			"timestamp": 10.672	
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
 			"strength": 0.2,         
-			"timestamp": 10.87
+			"timestamp": 10.882
 		},
 		{
 			"sound": "pig_step",
 			"duration": 0.3,
-			"strength": 0.4,         
-			"timestamp": 11.28
+			"strength": 0.35,         
+			"timestamp": 11.273
 		},
 		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.25,
 			"strength": 0.3,         
-			"timestamp": 11.27
-		},
-		{
-			"sound": "pig_step",
-			"duration": 0.3,
-			"strength": 0.4,         
-			"timestamp": 11.28
+			"timestamp": 11.313
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
-			"strength": 0.3,         
-			"timestamp": 11.32
-		},
-		{
-			"sound": "steve_step",
-			"duration": 0.25,
-			"strength": 0.1,         
-			"timestamp": 12.67
+			"strength": 0.2,         
+			"timestamp": 12.659
 		},
 		{
 			"sound": "pig_sound_1/3",
 			"duration": 0.35,
-			"strength": 0.6,         
+			"strength": 0.5,         
 			"timestamp": 14.66
 		},
 		{
 			"sound": "pig_sound_2/3",
 			"duration": 0.35,
-			"strength": 0.6,         
+			"strength": 0.5,         
 			"timestamp": 14.66
 		},
 		{
 			"sound": "pig_sound_3/3",
 			"duration": 0.35,
-			"strength": 0.6,         
+			"strength": 0.5,         
 			"timestamp": 14.66
 		},
 		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.25,
-			"strength": 0.2,         
-			"timestamp": 15.9
+			"strength": 0.25,         
+			"timestamp": 15.889
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.27,
-			"strength": 0.1,         
-			"timestamp": 16.32
+			"strength": 0.175,         
+			"timestamp": 16.316
 		},  
 
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
-			"strength": 0.1,         
+			"strength": 0.175,         
 			"timestamp": 16.8
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.26,
-			"strength": 0.1,         
-			"timestamp": 17.125
+			"strength": 0.2,         
+			"timestamp": 16.779
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.2,         
+			"timestamp": 17.123
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.2,         
+			"timestamp": 17.524
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.2,         
+			"timestamp": 18.016
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.1,         
-			"timestamp": 17.53
+			"timestamp": 18.367
 		},
 		{
-			"sound": "steve_step",
-			"duration": 0.25,
-			"strength": 0.1,         
-			"timestamp": 18.25
-		},
-		{
-			"sound": "steve_step",
-			"duration": 0.25,
-			"strength": 0.1,         
-			"timestamp": 18.37
-		},
-		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.25,
 			"strength": 0.3,         
-			"timestamp": 18.76
-		},
-		
-		{
-			"sound": "steve_step",
-			"duration": 0.25,
-			"strength": 0.15,         
-			"timestamp": 19.18
+			"timestamp": 18.776
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 19.18
+			"timestamp": 19.16
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 19.55
+			"timestamp": 19.51
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 19.93
+			"timestamp": 19.92
 		},
 		{
 			"sound": "pig_step",
@@ -216,7 +203,7 @@
 			"sound": "steve_step",
 			"duration": 0.35,
 			"strength": 0.2,         
-			"timestamp": 20.35
+			"timestamp": 20.335
 		},
 		{
 			"sound": "pig_step",
@@ -231,10 +218,10 @@
 			"timestamp": 20.73
 		},
 		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.35,
 			"strength": 0.2,         
-			"timestamp": 21.07
+			"timestamp": 21.081
 		},
 
 		{
@@ -243,59 +230,57 @@
 			"strength": 0.1,         
 			"timestamp": 21.48
 		},
-
-
 		{
 			"sound": "steve_step",
 			"duration": 0.20,
 			"strength": 0.15 ,         
-			"timestamp": 21.85
+			"timestamp": 21.855
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.20,
 			"strength": 0.20 ,         
-			"timestamp": 22.25
+			"timestamp": 22.253
 		},
 		{
 			"sound": "pig_sound_1/3",
 			"duration": 0.35,
 			"strength": 0.6,         
-			"timestamp": 22.47
+			"timestamp": 22.478
 		},
 		{
 			"sound": "pig_sound_2/3",
 			"duration": 0.35,
 			"strength": 0.6,         
-			"timestamp": 22.47
+			"timestamp": 22.478
 		},
 		{
 			"sound": "pig_sound_3/3",
 			"duration": 0.35,
 			"strength": 0.6,         
-			"timestamp": 22.47
+			"timestamp": 22.478
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.20,
 			"strength": 0.1 ,         
-			"timestamp": 22.7
+			"timestamp": 22.68
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.20,
 			"strength": 0.3,         
-			"timestamp": 23.04
+			"timestamp": 23.016
 		},
 		{
 			"sound": "pig_step",
 			"duration": 0.20,
 			"strength": 0.4,         
-			"timestamp": 24.08
+			"timestamp": 24.07
 		},
 
 		{
-			"sound": "steve_step",
+			"sound": "steve_step_high",
 			"duration": 0.20,
 			"strength": 0.3,         
 			"timestamp": 24.6
@@ -331,22 +316,28 @@
 			"timestamp": 25.57
 		},
 		{
+			"sound": "steve_step",
+			"duration": 0.20,
+			"strength": 0.2,         
+			"timestamp": 25.809
+		},
+		{
 			"sound": "pig_step",
 			"duration": 0.05,
-			"strength": 0.3,         
-			"timestamp": 25.94
+			"strength": 0.2,         
+			"timestamp": 25.935
 		},
 		{
 			"sound": "pig_step",
 			"duration": 0.03,
 			"strength": 0.15,         
-			"timestamp": 26.54
+			"timestamp": 26.53
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.20,
 			"strength": 0.2,         
-			"timestamp": 26.9
+			"timestamp": 26.88
 		},
 		{
 			"sound": "pig_step",
@@ -361,16 +352,10 @@
 			"timestamp": 27.78
 		},
 		{
-			"sound": "pig_step",
-			"duration": 0.02,
-			"strength": 0.17,         
-			"timestamp": 28.38 
-		},
-		{
 			"sound": "steve_step",
 			"duration": 0.1 ,
 			"strength": 0.1,         
-			"timestamp": 28.44
+			"timestamp": 28.37
 		},
 		{
 			"sound": "pig_sound_1/3",
@@ -394,19 +379,13 @@
 			"sound": "steve_step",
 			"duration": 0.2,
 			"strength": 0.06,         
-			"timestamp": 29.27
+			"timestamp": 29.257
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.2,
 			"strength": 0.15,         
-			"timestamp": 29.8
-		},
-		{
-			"sound": "steve_step",
-			"duration": 0.2,
-			"strength": 0.15,         
-			"timestamp": 30.18
+			"timestamp": 29.76
 		},
 		{
 			"sound": "pig_sound_1/3",
@@ -424,7 +403,7 @@
 			"sound": "pig_sound_3/3",
 			"duration": 0.25,
 			"strength": 0.35,         
-			"timestamp": 29.95
+			"timestamp": 28.85
 		},
 		{
 			"sound": "steve_step",
@@ -436,25 +415,595 @@
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 30.55
+			"timestamp": 30.537
 		},
 		{
 			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 30.55
+			"timestamp": 30.917
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 31.29
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 31.673
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 32.5
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 32.867
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 33.53
 		},
 		{
 			"sound": "cow_step",
 			"duration": 0.3,
-			"strength": 0.3,         
-			"timestamp": 30.18
+			"strength": 0.45,         
+			"timestamp": 33.15
 		},
 		{
-			"sound": "cow_step",
+			"sound": "steve_step",
 			"duration": 0.25,
 			"strength": 0.15,         
-			"timestamp": 30.85
+			"timestamp": 34.318
+		},		
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 36.188
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 36.796
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 37.447
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 37.733
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 38.015
+		},
+		{
+			"sound": "steve_step_high",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 38.468
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 38.793
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 39.263
+		},
+		{
+			"sound": "steve_step_high",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 39.67
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 40.06
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 40.425
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 40.82
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 41.215
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 41.564
+		},
+		{
+			"sound": "cow_sigh",
+			"duration": 1.2,
+			"strength": 0.8,         
+			"timestamp": 41.85
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 41.890
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.1,         
+			"timestamp": 41.418
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 42.787
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 43.261
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 43.663
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 44.03
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 44.415
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 44.825
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 45.215
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 44.663
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 45.655
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 46.86
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 47.255
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 47.653
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 48.06
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 48.521
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 48.923
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 49.33
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 49.715
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 50.07
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 50.46
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 50.862
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 51.274
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 50.862
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 51.62
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 52.02
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 52.42
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 52.92
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 53.119
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 53.427
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 53.724
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 53.724
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 54.03
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 54.32
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 54.61
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 54.91
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 55.22
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 53.52
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 55.81
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 56.12
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 56.43
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 56.68
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 57.06
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 57.34
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 57.862
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 58.25
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 58.66
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 58.92
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 59.23
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 59.52
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 59.86
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 60.15
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 60.482
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 60.778
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 61.11
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 61.44
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 61.65
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 62.22
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 62.32
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 62.61
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 62.93
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 63.23
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 63.88
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 64.52
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 64.866
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 65.17
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 65.478
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 65.782
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 66.06
+		},
+		{
+			"sound": "pig_sound_1/3",
+			"duration": 0.242,
+			"strength": 0.3,         
+			"timestamp": 66.187
+		},
+		{
+			"sound": "pig_sound_2/3",
+			"duration": 0.242,
+			"strength": 0.3,         
+			"timestamp": 66.187
+		},
+		{
+			"sound": "pig_sound_3/3",
+			"duration": 0.242,
+			"strength": 0.3,         
+			"timestamp": 66.187
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 66.45
+		},
+		{
+			"sound": "pig_step",
+			"duration": 0.175,
+			"strength": 0.1,         
+			"timestamp": 66.53
+		},
+		{
+			"sound": "steve_step",
+			"duration": 0.25,
+			"strength": 0.15,         
+			"timestamp": 66.715
 		}
 	]
 }
